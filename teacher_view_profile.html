@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="/static/8_tt/tt.css">
+</head>
+<body>
+
+    <center>
+            <table border="1" >
+                    <tr>
+                        <th>Teacher ID</th>
+                        <th>First Name</th>
+                        <th>Last Name</th>
+                        <th>Email-ID</th>
+                        <th>Mobile No</th>
+                        <th>Subject</th>
+                    </tr>
+                    {% for row in tdata %}
+                    <tr>
+                        <td>{{row.1}}</td>
+                        <td>{{row.3}}</td>
+                        <td>{{row.4}}</td>
+                        <td>{{row.5}}</td>
+                        <td>{{row.6}}</td>
+                        <td>{{row.7}}</td>
+                    </tr>
+                    {% endfor %}
+                </table>
+
+        <form method="post" action="/ta">
+        <input type="submit" value="Back"/>
+    </form>
+    </center>
+
+<div id="particles-js"></div>
+<script type="text/javascript" src="/static/particles.js"></script>
+<script type="text/javascript" src="/static/app.js"></script>
+
+</body>
+</html>

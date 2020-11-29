@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>keychecking</title>
+    <link rel="stylesheet" href="/static/3_key_css/sec_key.css">
+    <script>
+        window.onload = function () {
+      var a='sknte5';
+  document.getElementById("form1").onsubmit = function () {
+    var name1 = document.getElementById("pw").value;
+
+    if(name1==a)
+    {
+    window.open('/tlogin');
+    return true;
+
+    }
+    else
+    {
+    alert('enter correct pass');
+    window.open('/key11');
+    }
+  };
+};
+    </script>
+</head>
+
+<body>
+<div class="wrap">
+    <h2><u>Enter security key</u></h2>
+
+    <form action="/tlogin" id="form1" onsubmit="function()">
+
+        <input type="password" name="password" id="pw">
+
+        <input type="submit" value="Submit" onsubmit="function()">
+
+
+
+    </form>
+</div>
+
+<div id="particles-js"></div>
+<script type="text/javascript" src="/static/particles.js"></script>
+<script type="text/javascript" src="/static/app.js"></script>
+</body>
+
+</html>

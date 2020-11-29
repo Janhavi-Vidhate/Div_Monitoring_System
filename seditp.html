@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>teacherregistration</title>
+    <link rel="stylesheet" href="/static/5_teacher_reg_css/teacher_reg.css">
+</head>
+
+<body>
+<div class="wrap">
+    <h2>Dear Student,Enter Your Details Here</h2>
+    <form action="/ed1" method="POST">
+<!--        <input type="number" value={{email}} name="tid" required>-->
+
+        <input type="text"  value={{sid}} name="sid"  readonly/>
+        <input type="text" value="{{sfname}}" name="sfn" required>
+        <input type="text" value="{{slname}}" name="sln" required>
+        <input type="email" value="{{semail}}" name="semail" required>
+        <input type="number" value="{{smob}}" name="smob" required>
+        <input type="text" value="{{s_dob}}" name="sdob" required>
+
+        <input type="submit" value="Submit">
+<!--        <a href="/sa">skip</a>-->
+    </form>
+</div>
+
+<div id="particles-js"></div>
+<script type="text/javascript" src="/static/particles.js"></script>
+<script type="text/javascript" src="/static/app.js"></script>
+
+</body>
+</html>

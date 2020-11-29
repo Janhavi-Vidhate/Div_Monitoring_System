@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>studentregistration</title>
+    <link rel="stylesheet" href="/static/6_student_reg_css/student_reg.css">
+</head>
+
+<body>
+<div class="wrap",id="demo">
+    <h2>Dear Student,Register Here</h2>
+
+    <form action="/sreg" method="POST">
+        <input type="number" placeholder="Sid" name="sid" required>
+        <input type="password" placeholder="Password" name="pass" required>
+        <input type="text" placeholder="First Name" name="fn" required>
+        <input type="text" placeholder="Last Name" name="ln" required>
+        <input type="email" placeholder="Email-ID" name="eid" required>
+        <input type="number" placeholder="Mobile No" name="mobno" required>
+        <input type="date" placeholder="DOB" name="dob" required>
+        <input type="submit" value="Submit">
+    </form>
+<br><center><a href="/vds">Check SID</a></center>
+
+</div>
+<script>
+        document.getElementById("demo").innerHTML = "details registered succesfully";
+    </script>
+
+<div id="particles-js"></div>
+<script type="text/javascript" src="/static/particles.js"></script>
+<script type="text/javascript" src="/static/app.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>title</title>
+    <link rel="stylesheet" href="/static/8_tt/tt.css">
+</head>
+
+<body>
+<div class="bg">
+
+<div class="wrap">
+    <h2><u><i>IMPORTANT NOTICE FOR YOUR DIVISION</i></u></h2>
+    <br>
+    <table>
+                    <tr>
+                        <th>Notice No</th>
+                        <th>Notice</th>
+                    </tr>
+                    {% for row in notice %}
+                    <tr>
+                        <td>{{row.1}}</td>
+                        <td>{{row.2}}</td>
+                    </tr>
+                    {% endfor %}
+    </table>
+
+
+    <form method="post" action="/sa">
+        <input type="submit" value="Back"/>
+    </form>
+</div>
+
+<div id="particles-js"></div>
+<script type="text/javascript" src="/static/particles.js"></script>
+<script type="text/javascript" src="/static/app.js"></script>
+</div>
+</body>
+
+</html>

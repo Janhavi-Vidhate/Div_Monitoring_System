@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>title</title>
+    <link rel="stylesheet" href="/static/8_tt/tt.css">
+</head>
+
+<body>
+<div class="bg">
+
+<div class="wrap">
+    <h2><u><i>IMPORTANT NOTICE FOR YOUR DIVISION</i></u></h2>
+    <br>
+    <table>
+                    <tr>
+                        <th>Student ID</th>
+                        <th>Student Name</th>
+                        <th>Total Attendance</th>
+                        <th>Total Lectures</th>
+                        <th>(P/A)</th>
+                    </tr>
+                    {% for row in adata %}
+                    <tr>
+                        <td>{{row.1}}</td>
+                        <td>{{row.2}}</td>
+                        <td>{{row.3}}</td>
+                        <td>{{row.4}}</td>
+<!--                        <td><input type="checkbox"/></td>-->
+<!--                        <a href="/vps/{{row.1}}" data-target="#modaledit{{row.1}}">ADD</a>-->
+<!--                       <td><form action="/vps" method="post">-->
+<!--&lt;!&ndash;                            <input type="hidden" name="attain" value="{{row.1}}">&ndash;&gt;-->
+<!--                            <input type="submit" name="submit" value="ADD">-->
+<!--                        </form>-->
+<!--                        </td>-->
+                        <td>
+                            <a href="/add/{{row.1}}">ADD</a>
+                        </td>
+
+                    </tr>
+                    <div>
+<!--                        <form action="/vps" method="post">-->
+<!--                            <input type="hidden" name="attain" value="1">-->
+<!--                        </form>-->
+                    </div>
+
+                    {% endfor %}
+    </table>
+    <form method="post" action="/addTL">
+    <input type="submit" value="Submit">
+
+    <form method="post" action="/sa">
+        <input type="submit" value="Back"/>
+    </form>
+</div>
+
+<div id="particles-js"></div>
+<script type="text/javascript" src="/static/particles.js"></script>
+<script type="text/javascript" src="/static/app.js"></script>
+</div>
+</body>
+
+</html>

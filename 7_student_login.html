@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>studentsignup</title>
+    <link rel="stylesheet" href="/static/4_teacher_signup_css/teacher_signup.css">
+</head>
+
+<body>
+<div class="wrap">
+    <h2>Dear Student,Login Here</h2>
+    <form action="/slogin" method="POST">
+        <input type="text" name="SID" placeholder="SID" required>
+        <input type="password" name="Password" placeholder="Password" required>
+        <input type="submit" value="Submit">
+        <div class="msg">{{ msg }}</div>
+    </form>
+    <br><center><a href="/sreg">haven't registered</a></center>
+</div>
+
+<div id="particles-js"></div>
+<script type="text/javascript" src="/static/particles.js"></script>
+<script type="text/javascript" src="/static/app.js"></script>
+</body>
+
+</html>

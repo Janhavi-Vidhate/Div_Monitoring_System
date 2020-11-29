@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>teacherregistration</title>
+    <link rel="stylesheet" href="/static/5_teacher_reg_css/teacher_reg.css">
+</head>
+
+<body>
+<div class="wrap">
+    <h2>Dear teacher,Add Student Here</h2>
+    <form action="/ads" method="POST">
+         <input type="text" placeholder="Student ID" name="sid" required>
+        <input type="text" placeholder="Student Name" name="sname" required>
+        <input type="text" placeholder="Total Attendance" name="ta" required>
+        <input type="submit" value="Submit">
+    </form>
+    <form action="/ta"><input type="submit" value="Back"></form>
+
+</div>
+
+<div id="particles-js"></div>
+<script type="text/javascript" src="/static/particles.js"></script>
+<script type="text/javascript" src="/static/app.js"></script>
+
+</body>
+</html>
